@@ -1,0 +1,4 @@
+srcs/.env
+srcs/requirements/database/.env
+srcs/requirements/backend/.env
+setup.sh
