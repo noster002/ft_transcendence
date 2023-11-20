@@ -42,7 +42,7 @@ MFA_APP_NAME | Name to be shown in the MFA application (Google Authenticator)
 
 
 #### Certificate
-As the proxy expects a secure connection over port 443, there must be a certificate at `srcs/requirements/proxy/tools`.  
+As the proxy expects a secure connection over port 443, there must be a certificate at _srcs/requirements/proxy/tools_.  
 The key and the certificate must have the respective names: `<domain name>.key` `<domain name>.crt`.  
 There are multiple ways to get a certificate.
 
@@ -56,4 +56,4 @@ openssl req -x509 -nodes -days 365 -newkey rsa:2048 -keyout srcs/requirements/pr
 
 `make` now runs this website on the local IP of the device.  
 
-It is accessible on the same device over localhost or from any device in the same Wifi over the IP of the hosting device.
+It is accessible on the same device over _localhost_ or from any device in the same Wifi over the IP of the hosting device.
