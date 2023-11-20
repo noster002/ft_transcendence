@@ -55,4 +55,5 @@ openssl req -x509 -nodes -days 365 -newkey rsa:2048 -keyout srcs/requirements/pr
 ## Usage
 
 `make` now runs this website on the local IP of the device.  
+
 It is accessible on the same device over localhost or from any device in the same Wifi over the IP of the hosting device.
