@@ -38,5 +38,13 @@ API42_REDIRECT | Place to be redirected after authorization
 JWT_SECRET | Jwt secret to validate the session
 MFA_APP_NAME | Name to be shown in the MFA application (Google Authenticator)
 
-As the proxy expects a secure connection over port 443, there must be a certificate at `srcs/requirements/proxy/tools`.
-The key and the certificate must have the respective names: `<domain name>.key` `<domain name>.crt`
+
+As the proxy expects a secure connection over port 443, there must be a certificate at `srcs/requirements/proxy/tools`.  
+The key and the certificate must have the respective names: `<domain name>.key` `<domain name>.crt`.  
+There are multiple ways to get a certificate.
+
+E.g.:
+Generating a self-signed certificate using OpenSSL
+```
+openssl req -x509 -nodes -days 365 -newkey rsa:2048 -keyout srcs/requirements/proxy/tools/<domain>.key -out srcs/requirements/proxy/tools/<domain>.crt
+```
