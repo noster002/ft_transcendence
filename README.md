@@ -7,7 +7,7 @@ A full stack web application
 
 The program requires certain environment variables for the different services:
 
-srcs/.env
+_srcs/.env_
 Variable | Value
 --- | ---
 NODE_ENV | `development` or `production`
@@ -22,14 +22,14 @@ API42_AUTHORIZE | Redirect link to the API authorize URL of 42 (use quotes)
 PROXY_HOST | Hostname for proxy service
 DOMAIN_NAME | Domain name (must be first part of the certificate)
 
-srcs/requirements/database/.env
+_srcs/requirements/database/.env_
 Variable | Value
 --- | ---
 POSTGRES_DB | Database name
 POSTGRES_USER | Database user
 POSTGRES_PASSWORD | Database password
 
-srcs/requirements/backend/.env
+_srcs/requirements/backend/.env_
 Variable | Value
 --- | ---
 API42_ID | 42 API ID
@@ -37,6 +37,7 @@ API42_SECRET | 42 API secret
 API42_REDIRECT | Place to be redirected after authorization
 JWT_SECRET | Jwt secret to validate the session
 MFA_APP_NAME | Name to be shown in the MFA application (Google Authenticator)
+
 
 
 As the proxy expects a secure connection over port 443, there must be a certificate at `srcs/requirements/proxy/tools`.  
@@ -48,3 +49,6 @@ Generating a self-signed certificate using OpenSSL
 ```
 openssl req -x509 -nodes -days 365 -newkey rsa:2048 -keyout srcs/requirements/proxy/tools/<domain>.key -out srcs/requirements/proxy/tools/<domain>.crt
 ```
+
+
+`make` now runs this website on the local IP of the device. It is accessible on the same device over localhost or from any device in the same Wifi over the IP of the hosting device.
