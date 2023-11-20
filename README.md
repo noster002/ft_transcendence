@@ -38,7 +38,7 @@ API42_ID | 42 API ID
 API42_SECRET | 42 API secret
 API42_REDIRECT | Place to be redirected after authorization
 JWT_SECRET | Jwt secret to validate the session
-MFA_APP_NAME | Name to be shown in the MFA application (Google Authenticator)
+MFA_APP_NAME | Name to be shown in the MFA application (Google Authenticator)  
 
 
 #### Certificate
@@ -54,4 +54,5 @@ openssl req -x509 -nodes -days 365 -newkey rsa:2048 -keyout srcs/requirements/pr
 
 ## Usage
 
-`make` now runs this website on the local IP of the device. It is accessible on the same device over localhost or from any device in the same Wifi over the IP of the hosting device.
+`make` now runs this website on the local IP of the device.  
+It is accessible on the same device over localhost or from any device in the same Wifi over the IP of the hosting device.
