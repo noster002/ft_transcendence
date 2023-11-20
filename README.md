@@ -7,6 +7,7 @@ A full stack web application
 
 The program requires certain environment variables for the different services:
 
+#### Environment
 _srcs/.env_
 Variable | Value
 --- | ---
@@ -38,8 +39,7 @@ API42_REDIRECT | Place to be redirected after authorization
 JWT_SECRET | Jwt secret to validate the session
 MFA_APP_NAME | Name to be shown in the MFA application (Google Authenticator)
 
-
-
+#### Certificate
 As the proxy expects a secure connection over port 443, there must be a certificate at `srcs/requirements/proxy/tools`.  
 The key and the certificate must have the respective names: `<domain name>.key` `<domain name>.crt`.  
 There are multiple ways to get a certificate.
@@ -50,5 +50,6 @@ Generating a self-signed certificate using OpenSSL
 openssl req -x509 -nodes -days 365 -newkey rsa:2048 -keyout srcs/requirements/proxy/tools/<domain>.key -out srcs/requirements/proxy/tools/<domain>.crt
 ```
 
+## Usage
 
 `make` now runs this website on the local IP of the device. It is accessible on the same device over localhost or from any device in the same Wifi over the IP of the hosting device.
