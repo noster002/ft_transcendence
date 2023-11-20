@@ -20,7 +20,7 @@ BACKEND_PORT | Port for backend API
 BACKEND_WS_PORT | Port for websocket connections
 FRONTEND_HOST | Hostname for frontend service
 FRONTEND_PORT | Port for frontend API
-API42_AUTHORIZE | Redirect link to the API authorize URL of 42 (use quotes)
+API42_AUTHORIZE | Redirect link to the API authorize URL of 42
 PROXY_HOST | Hostname for proxy service
 DOMAIN_NAME | Domain name (must be first part of the certificate)
 
