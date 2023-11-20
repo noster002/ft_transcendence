@@ -39,6 +39,7 @@ API42_SECRET | 42 API secret
 API42_REDIRECT | Place to be redirected after authorization
 JWT_SECRET | Jwt secret to validate the session
 MFA_APP_NAME | Name to be shown in the MFA application (Google Authenticator)
+
 ====
 #### Certificate
 As the proxy expects a secure connection over port 443, there must be a certificate at `srcs/requirements/proxy/tools`.  
