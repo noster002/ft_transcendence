@@ -14,7 +14,7 @@ import { ConfigModule, ConfigService } from '@nestjs/config';
         username: configService.get<string>('postgres.database.user'),
         password: configService.get<string>('postgres.database.password'),
         database: configService.get<string>('postgres.database.name'),
-        entities: [__dirname + '/../**/*.entity.{js,ts}'],
+        entities: [__dirname + '../**/entities/*.entity.{js,ts}'],
         synchronize: true,
       }),
     }),

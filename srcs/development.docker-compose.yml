@@ -47,6 +47,8 @@ services:
         target: /var/lib/postgresql/data/
     env_file:
       - ./requirements/database/.env
+    environment:
+      PGPORT: $DATABASE_PORT
 
   backend:
     container_name: $BACKEND_HOST
