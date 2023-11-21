@@ -1,7 +1,24 @@
 # ft_transcendence
 42 School - Level06
 
-A full stack web application
+A full stack web application set up in docker-compose with a webserver (nginx), a frontend (Next.js, TypeScript), a backend (NestJS, TypeScript) and a database (postgreSQL)
+
+### Features
+
++ Pong game
+  + singleplayer (offline)
+  + multiplayer (online
++ user management
+  + login system using the OAuth of 42
+  + 2FA possibilities
+  + customizable profile
+  + editable friends list
+  + blocking mechanism
++ real-time chat
+  + DMs
+  + group chats
+    + administration rights
+    + sanction policies
 
 ## Setup
 
